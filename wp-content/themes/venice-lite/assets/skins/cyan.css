@@ -1,0 +1,144 @@
+::-moz-selection {
+    background-color: #30c2a5;
+}
+
+::selection {
+    background-color: #30c2a5;
+}
+
+.search-box,
+.archive-box,
+.post-container .link a,
+.post-container .quote article,
+.tabs ul,
+.toggle_container h5.element,
+.wp-pagenavi a:hover,
+.wip-pagination span,
+.wip-pagination a span:hover,
+.wp-pagenavi span.current {
+    background-color: #30c2a5;
+}
+
+a {
+    color: #30c2a5;
+}
+
+.woocommerce input.button#place_order {
+    background-color: #30c2a5;
+}
+
+span.button:hover,
+.post-container .link a:hover,
+.post-container .quote:hover article,
+.wpcf7-form input[type=submit]:hover,
+.woocommerce-product-search input[type=submit]:hover,
+.contact-form input[type=submit]:hover,
+.searchform input[type=submit]:hover,
+.comment-form input[type=submit]:hover,
+#sidebar .tagcloud a:hover,
+#footer .tagcloud a:hover,
+.tabs li a:hover,
+.tabs li.ui-tabs-active a,
+.tabs li.ui-state-active a,
+.toggle_container h5.element:hover,
+.toggle_container h5.inactive,
+.toggle_container h5.inactive:hover,
+#footer input[type=submit]:hover,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.theme-default .nivo-directionNav a:hover {
+    background-color: #1abc9c;
+}
+
+.wpcf7-form input[type=submit]:hover,
+.woocommerce-product-search input[type=submit]:hover,
+.contact-form input[type=submit]:hover,
+.searchform input[type=submit]:hover,
+.comment-form input[type=submit]:hover,
+span.button:hover,
+#sidebar .tagcloud a:hover,
+#footer .tagcloud a:hover,
+#footer input[type=submit]:hover {
+    border-color: #1abc9c;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active ,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a ,
+body.archive.woocommerce .product-category h3:hover,
+body.archive.woocommerce .product-category h3:active,
+body.archive.woocommerce .product-category h3:focus,
+a:hover,
+a:active,
+a:focus,
+#logo a.logo:hover,
+nav#mainmenu ul li a:hover,
+nav#mainmenu li:hover > a,
+nav#mainmenu ul li.current-menu-item > a,
+nav#mainmenu ul li.current_page_item > a,
+nav#mainmenu ul li.current-menu-parent > a,
+nav#mainmenu ul li.current_page_ancestor > a,
+nav#mainmenu ul li.current-menu-ancestor > a,
+#back-to-top:hover,
+.post-article a:hover,
+.post-article a:active,
+.post-article a:focus,
+.sidebar-area a:hover,
+.sidebar-area a:active,
+.sidebar-area a:focus,
+#footer a:hover,
+#footer a:active,
+#footer a:focus,
+#footer ul.widget-category li:hover,
+#footer ul.widget-category li a:hover,
+.social-buttons a:hover,
+#wp-calendar td a:hover,
+span.nobutton:hover,
+.logged-in-as a:hover,
+#comments a:hover,
+.post-container .title a:hover {
+    color: #1abc9c;
+}
+
+.star-rating span,
+.woocommerce p.stars,
+.woocommerce p.stars a,
+.woocommerce p.stars:hover a,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+    color: #1abc9c;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce a.button:hover,
+.woocommerce a.add_to_cart_button:hover,
+.woocommerce .woocommerce-message a.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce .wc-proceed-to-checkout input:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce input.button#place_order:hover {
+    background-color: #1abc9c;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce a.button:hover,
+.woocommerce a.add_to_cart_button:hover,
+.woocommerce .woocommerce-message a.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce .wc-proceed-to-checkout input:hover {
+    border-color: #1abc9c;
+}

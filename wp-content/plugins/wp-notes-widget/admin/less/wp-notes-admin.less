@@ -1,0 +1,398 @@
+@import "elements.less";
+@import url(//fonts.googleapis.com/css?family=Slabo+27px|Dancing+Script|Kalam|Architects+Daughter|Indie+Flower|Shadows+Into+Light|Pacifico|Gloria+Hallelujah|Covered+By+Your+Grace|Kaushan+Script|Coming+Soon|Courgette|Satisfy|Cookie|Permanent+Marker|Rock+Salt|Shadows+Into+Light+Two|Tangerine|Handlee|Great+Vibes&subset=latin,latin-ext);/*============================================================================
+   UTILITY CLASSES
+ ==============================================================================*/ 
+.wp-notes-cf {
+    zoom: 1; // For IE 6/7 (trigger hasLayout)
+  .wp-notes-cf
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear:both;
+    }
+}
+
+ 
+/*============================================================================
+  NOTES POST PAGE
+==============================================================================*/
+
+.wp-notes-post-admin-container {
+  
+  .wp-notes-margin-bottom {
+    margin-bottom:20px;
+  }
+
+  .wp-notes-no-margin-bottom {
+    margin-bottom:0px !important;
+  }
+
+  .over-limit {
+    color:red !important;
+  }
+
+  .wp-notes-label {
+    display:block;
+    font-weight:bold;
+  }
+
+  .wp-notes-textarea {
+    height:130px;
+    max-width:300px;
+    width:100%;
+  }
+
+  .wp-notes-hidden {
+    //for accessiblity, we don't use display:none
+    position: absolute;
+    left:-9999px;
+  }
+
+  .faded {
+    color:#555;
+  }
+
+  input.full-width {
+    width:100%;
+    display:block;
+    margin-bottom:5px;
+  }
+
+  .full-width {
+    width:100%;
+  }
+
+  #WP_Notes_image {
+    max-width:300px;
+  }
+
+  h4 {
+    font-size:1.1em;
+    font-weight:bold;
+    border-bottom:none;
+    margin:0;
+    &:first-child {
+      margin-top:10px;
+    }
+  }
+
+  .content-segment {
+    margin-bottom: 20px;
+    border-bottom:1px solid #eee;
+    padding:10px 0 20px 0;
+
+    &:last-child {
+      margin-bottom:0;
+      border-bottom:none;
+    }
+  }
+
+  .wp-notes-image-container {
+    padding-top:10px;
+
+    .no-image-box {
+      width:100%;
+      max-width:200px;
+      background-color:#eee;
+      border:1px solid #ddd;
+      display:inline-block;
+      box-sizing: border-box;
+      .no-image-shim {
+        display:inline-block;
+        vertical-align: middle;
+        height:100px;
+        width:0;
+      }
+
+      div.text {
+        display:inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width:98%; //strangely, this is not centering vertically at width 100%. We be looked into later.
+        margin:0;
+      }
+    }
+  }
+
+  p {
+    margin-top:0;
+  }
+
+  .secondary-text {
+    color:#888;
+  }
+
+  .no-margin-below {
+    margin-bottom:0;
+  }
+  
+
+  .wp-notes-radio-option-controls {
+    .wp-notes-cf();
+    
+    .wp-notes-radio-option-control {
+      float:left;
+      //margin-left:30px;
+      padding:5px 8px;
+    
+      transition: background-color .2s ease-in;
+      
+      &:first-child {
+        margin-left:0;
+      }
+      &.checked {
+        background-color:#eee;
+      }
+
+      input {
+        position:relative;
+        top:2px;
+      }
+    }
+  }
+
+  .wp-notes-radio-component-container {
+    background-color:#eee;
+    padding:5px;
+  }
+
+  .wp-notes-download-components {
+    .wp-notes-cf();
+
+    & > a#wp-notes-add-download {
+      float:left;
+      width:20%;
+      box-sizing: border-box;
+      border-radius: 3px 0 0 3px;
+      height:30px;
+      display:block;
+      text-align: center;
+    }
+
+    & > input#WP_Notes_download_link {
+      float:left;
+      width:80%;
+      box-sizing: border-box;
+      margin:0;
+      height:30px;
+      display:block;
+      color: #777;
+    }
+  }
+
+  .wp-notes-plain-link-components {
+
+    input#WP_Notes_plain_link_new_tab {
+      //adjustments to make it line up with other elements.
+      position:relative;
+      left:2px;
+    }
+  }
+
+  #WP_Notes_twitter_chars_remaining {
+    font-weight: bold;
+  }
+
+  #WP_Notes_twitter_over_limit_text {
+    display:block;
+    color:red;
+  }
+
+  iframe#WP_Notes_video_embed_preview {
+    height:160px;
+    width:100%;
+    max-width: 350px;
+  }
+
+  .wp-notes-audio-container {
+    padding:5px 0;
+
+    p {
+      margin:0;
+    }
+  }
+
+}
+
+
+/*============================================================================
+  WIDGET ADMINISTRATION PAGE
+==============================================================================*/
+
+.wp-notes-widget-admin-container {
+  &:last-child {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom:10px;    
+  }
+
+  
+  .wp-notes-cf();
+
+  ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0,0,0,.5);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+
+  .wp-notes-widget-adjustment-options {
+    label {
+      display:block;
+    }
+  }
+
+  .wp-notes-widget-adjustment-list-container {
+    height:170px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding:5px;
+    border:1px solid #ccc;
+    &.disabled {
+      background-color: #fbfbfb;
+
+      label {
+        color:#999;
+      }
+    }
+    ul.wp-notes-widget-adjustment-list {
+      list-style-type: none;
+      margin:0;
+    }
+  }
+
+  .wp-notes-widget-admin-third {
+    float:left;
+    padding-right: 15px;
+    width:33%;
+    .box-sizing(border-box);
+
+    &:last-child {
+
+    }
+  }  
+
+  @media (max-width: 800px) {
+    .wp-notes-widget-admin-third {
+      float:none;
+      padding-right: 0px;
+      width:100%;
+
+    }  
+  }
+
+  label {
+    //display:block;
+  }
+  select {
+    display: block;
+  }
+
+  .font-style-selection-container {
+
+    ul.wp-notes-widget-font-list {
+      list-style-type: none;
+      margin:0;
+      padding:0;
+
+      li {
+        float:left;
+        padding-right: 20px;
+        width:33%;
+        display:block;
+        box-sizing: border-box;
+        font-size:1.2rem;
+        height:60px;
+      }
+    }
+
+    label#font-selection-indie-flower-label {
+      font-family: 'Indie Flower';
+    }
+    label#font-selection-shadows-into-light-label {
+      font-family: 'Shadows Into Light';
+    }
+    label#font-selection-pacifico-label {
+      font-family: 'Pacifico';
+    }
+    label#font-selection-kalam-label {
+      font-family: 'Kalam';
+    }
+    label#font-selection-dancing-script-label {
+      font-family: 'Dancing Script';
+    }
+    label#font-selection-kaushan-script-label {
+      font-family: 'Kaushan Script';
+    }
+    label#font-selection-gloria-hallelujah-label {
+      font-family: 'Gloria Hallelujah';
+    }
+    label#font-selection-covered-by-your-grace-label {
+      font-family: 'Covered By Your Grace';
+    }
+    label#font-selection-courgette-label {
+      font-family: 'Courgette';
+    }
+    label#font-selection-coming-soon-label {
+      font-family: 'Coming Soon';
+    }
+    label#font-selection-permanent-marker-label {
+      font-family: 'Permanent Marker';
+    }
+    label#font-selection-shadows-into-light-two-label {
+      font-family: 'Shadows Into Light Two';
+    }
+    label#font-selection-rock-salt-label {
+      font-family: 'Rock Salt';
+    }
+    label#font-selection-cookie-label {
+      font-family: 'Cookie';
+      font-size:1.5rem;
+    }
+    label#font-selection-handlee-label {
+      font-family: 'Handlee';
+    }
+    label#font-selection-tangerine-label {
+      font-family: 'Tangerine';
+      font-size:1.5rem;
+    }
+    label#font-selection-great-vibes-label {
+      font-family: 'Great Vibes';
+    }
+
+  }
+
+
+}
+
+
+@media only screen and (max-width:1100px){
+
+
+}
+
+
+@media only screen and (max-width:500px){
+
+
+}
+
+
+/*============================================================================
+  SETTINGS PAGE
+==============================================================================*/
+
+input.wp-notes-widget-long {
+  max-width: 500px;
+  width:100%;
+}
+
+.wp-notes-widget-limit-width {
+  max-width: 600px;
+}
